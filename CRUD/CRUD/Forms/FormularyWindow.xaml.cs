@@ -138,7 +138,7 @@ namespace CRUD.Forms
                         r.Quantity = (float)Convert.ToInt32(win.txtQuantity.Text);
                         r.OrderPoint = (float)Convert.ToInt32(win.txtOrderPoint.Text);
 
-                        string stm = "UPDATE processes set desc=\"" + r.Name + "\", onhand=\"" + r.Quantity + "\", orderpoint=\"" + r.OrderPoint + "\" where id=" + r.Id + ";";
+                        string stm = "UPDATE reactants set name=\"" + r.Name + "\", onhand=\"" + r.Quantity + "\", orderpoint=\"" + r.OrderPoint + "\" where id=" + r.Id + ";";
                         SQLiteCommand cmd = new SQLiteCommand(stm, Connection);
                         int rows = cmd.ExecuteNonQuery();
                     }

@@ -109,7 +109,7 @@ namespace CRUD.Forms {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/CRUD;V1.0.0.0;component/forms/processreactantwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/CRUD;component/forms/processreactantwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Forms\ProcessReactantWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

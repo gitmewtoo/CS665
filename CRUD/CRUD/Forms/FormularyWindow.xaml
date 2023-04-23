@@ -19,11 +19,9 @@
         <Button x:Name="btnCreateReactant" Content="Create" HorizontalAlignment="Left" Margin="26,381,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.504,0.636" Click="btnCreateReactant_Click"/>
         <Button x:Name="btnUpdateReactant" Content="Update" HorizontalAlignment="Left" Margin="111,381,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.504,0.636" Click="btnUpdateReactant_Click"/>
         <Button x:Name="btnDeleteReactant" Content="Delete" HorizontalAlignment="Left" Margin="163,381,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.504,0.636" Click="btnDeleteReactant_Click"/>
-        <Button x:Name="btnReadReactant" Content="Read" HorizontalAlignment="Left" Margin="72,381,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.504,0.636" Click="btnReadReactant_Click"/>
         <Button x:Name="btnCreateFormula" Content="Add" HorizontalAlignment="Left" Margin="440,168,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.504,0.636" Click="btnCreateFormula_Click" Width="38"/>
         <Button x:Name="btnUpdateFormula" Content="Update" HorizontalAlignment="Left" Margin="563,381,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.504,0.636" Click="btnUpdateFormula_Click"/>
         <Button x:Name="btnDeleteFormula" Content="Delete" HorizontalAlignment="Left" Margin="440,217,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.504,0.636" Click="btnDeleteFormula_Click"/>
-        <Button x:Name="btnReadFormula" Content="Read" HorizontalAlignment="Left" Margin="509,381,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.504,0.636" Click="btnReadFormula_Click" Width="44"/>
         <Button x:Name="btnOK" Content="OK" HorizontalAlignment="Left" Margin="784,440,0,0" VerticalAlignment="Top" Click="btnOK_Click" Width="51"/>
         <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="840,440,0,0" VerticalAlignment="Top" Click="btnCancel_Click" Width="50"/>
 

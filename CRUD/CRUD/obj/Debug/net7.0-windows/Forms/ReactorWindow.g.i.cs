@@ -109,7 +109,7 @@ namespace CRUD {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/CRUD;V1.0.0.0;component/forms/reactorwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/CRUD;component/forms/reactorwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Forms\ReactorWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

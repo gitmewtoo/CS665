@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CRUD.Forms"
         mc:Ignorable="d"
-        Title="ProcessWindow" Height="160" Width="370">
+        Title="ProcessWindow" Height="200" Width="390">
     <Grid>
         <Button x:Name="btnOK" Content="OK" HorizontalAlignment="Left" Margin="249,114,0,0" VerticalAlignment="Top" Click="btnOK_Click" Width="51"/>
         <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="305,114,0,0" VerticalAlignment="Top" Click="btnCancel_Click" Width="50"/>

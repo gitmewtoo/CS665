@@ -7,26 +7,25 @@
         mc:Ignorable="d"
         Title="CRUD" Height="500" Width="800" ResizeMode="NoResize">
     <Grid>
-        <Button Content="Read Tables" HorizontalAlignment="Left" Margin="30,403,0,0" VerticalAlignment="Top" Click="btnShowData_Click"/>
-        <Button Content="Create Tables" HorizontalAlignment="Left" Margin="136,403,0,0" VerticalAlignment="Top" Click="Create_Tables"/>
-        <Button Content="Insert Data" HorizontalAlignment="Left" Margin="221,403,0,0" VerticalAlignment="Top" Click="Insert_Starting_Data"/>
+        <Button Content="Create Tables" HorizontalAlignment="Left" Margin="30,413,0,0" VerticalAlignment="Top" Click="Create_Tables"/>
         <DataGrid x:Name="dgReactors" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="30,97,0,216" HorizontalAlignment="Left" Width="350"/>
-        <Button Content="Clear Tables" HorizontalAlignment="Left" Margin="302,403,0,0" VerticalAlignment="Top" Click="Clear_Tables"/>
+        <Button Content="Clear Tables" HorizontalAlignment="Left" Margin="115,413,0,0" VerticalAlignment="Top" Click="Clear_Tables"/>
         <DataGrid x:Name="dgProcesses" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="400,99,0,216" HorizontalAlignment="Left" Width="350"/>
         <Label Content="Available Reactors" HorizontalAlignment="Left" Margin="25,72,0,0" VerticalAlignment="Top"/>
         <Label Content="Available Processes" HorizontalAlignment="Left" Margin="400,75,0,0" VerticalAlignment="Top"/>
         <Button x:Name="btnCreateReactor" Content="Create" HorizontalAlignment="Left" Margin="30,273,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.504,0.636" Click="btnCreateReactor_Click"/>
-        <Button x:Name="btnUpdateReactor" Content="Update" HorizontalAlignment="Left" Margin="115,273,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.504,0.636" Click="btnUpdateReactor_Click"/>
-        <Button x:Name="btnDeleteReactor" Content="Delete" HorizontalAlignment="Left" Margin="167,273,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.504,0.636" Click="btnDeleteReactor_Click"/>
-        <Button x:Name="btnReadReactor_Copy" Content="Read" HorizontalAlignment="Left" Margin="76,273,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.504,0.636" Click="btnReadReactor_Click"/>
+        <Button x:Name="btnUpdateReactor" Content="Update" HorizontalAlignment="Left" Margin="77,273,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.504,0.636" Click="btnUpdateReactor_Click"/>
+        <Button x:Name="btnDeleteReactor" Content="Delete" HorizontalAlignment="Left" Margin="129,273,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.504,0.636" Click="btnDeleteReactor_Click"/>
         <Button x:Name="btnCreateProcess" Content="Create" HorizontalAlignment="Left" Margin="403,273,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.504,0.636" Click="btnCreateProcess_Click"/>
-        <Button x:Name="btnUpdateProcess" Content="Update" HorizontalAlignment="Left" Margin="488,273,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.504,0.636" Click="btnUpdateProcess_Click"/>
-        <Button x:Name="btnDeleteProcess" Content="Delete" HorizontalAlignment="Left" Margin="540,273,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.504,0.636" Click="btnDeleteProcess_Click"/>
-        <Button x:Name="btnReadProcess1" Content="Read" HorizontalAlignment="Left" Margin="449,273,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.504,0.636" Click="btnReadProcess_Click"/>
-        <ComboBox x:Name="cmbBuildings" HorizontalAlignment="Left" Margin="31,50,0,0" VerticalAlignment="Top" Width="349" SelectionChanged="cmbBuildings_SelectionChanged" />
+        <Button x:Name="btnUpdateProcess" Content="Update" HorizontalAlignment="Left" Margin="450,273,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.504,0.636" Click="btnUpdateProcess_Click"/>
+        <Button x:Name="btnDeleteProcess" Content="Delete" HorizontalAlignment="Left" Margin="501,273,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.504,0.636" Click="btnDeleteProcess_Click"/>
+        <ComboBox x:Name="cmbBuildings" HorizontalAlignment="Left" Margin="31,50,0,0" VerticalAlignment="Top" Width="222" SelectionChanged="cmbBuildings_SelectionChanged" />
         <Button Content="Process Formulary" HorizontalAlignment="Left" Margin="599,273,0,0" VerticalAlignment="Top" Width="151" Click="Button_Click"/>
-        <Button Content="Facility Setup" HorizontalAlignment="Left" Margin="221,273,0,0" VerticalAlignment="Top" Width="159" Click="FacilityCreate_Click"/>
         <Button x:Name="btnMakeABatch" Content="MAKE A BATCH" HorizontalAlignment="Left" Margin="31,314,0,0" VerticalAlignment="Top" Width="719" Click="Button_Click_1" Height="77" FontSize="36"/>
+        <Button Content="Delete Tables" HorizontalAlignment="Left" Margin="194,413,0,0" VerticalAlignment="Top" Click="Delete_Tables"/>
+        <Button x:Name="btnCreateBuilding" Content="Create" HorizontalAlignment="Left" Margin="257,52,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.504,0.636" Click="btnCreateBuilding_Click"/>
+        <Button x:Name="btnUpdateBuilding" Content="Update" HorizontalAlignment="Left" Margin="302,52,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.504,0.636" Click="btnUpdateBuilding_Click"/>
+        <Button x:Name="btnDeleteBuilding" Content="Delete" HorizontalAlignment="Left" Margin="352,52,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.504,0.636" Click="btnDeleteBuilding_Click"/>
 
     </Grid>
 </Window>
