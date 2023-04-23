@@ -164,11 +164,11 @@ namespace CRUD
             SQLiteCommand cmd = new SQLiteCommand(sID, conn);
             Int64 result = (long)cmd.ExecuteScalar();
             int iID = Convert.ToInt32(result) + 1;
-            int iBuildingID = 0;
 
             ReactorWindow win = new ReactorWindow();
             win.txtID.Text = iID.ToString();
             win.txtName.Text = "Enter a name.";
+            win.txtBuildingId.Text = buildingId.ToString();
             win.txtTemp.Text = "0.0";
             win.txtVolume.Text = "5000.0";
             if ((bool)win.ShowDialog())
@@ -178,10 +178,10 @@ namespace CRUD
                 r.Temp = (float)Convert.ToDouble(win.txtTemp.Text);
                 r.Volume = (float)Convert.ToDouble(win.txtVolume.Text);
 
-                string stm = "INSERT INTO reactors ( id, name, building_id, temp, volume) VALUES (\"" + iID + "\", \"" + r.Name + "\", \"" + iBuildingID + "\", \"" + r.Temp + "\", \"" + r.Volume + "\");";
+                string stm = "INSERT INTO reactors ( id, name, building_id, temp, volume) VALUES (\"" + iID + "\", \"" + r.Name + "\", \"" + buildingId + "\", \"" + r.Temp + "\", \"" + r.Volume + "\");";
                 cmd = new SQLiteCommand(stm, conn);
-                int rows = cmd.ExecuteNonQuery();
-
+                cmd.ExecuteNonQuery();
+                refresh = true;
             }
             Show_Data();
         }
@@ -212,7 +212,8 @@ namespace CRUD
 
                         string stm = "UPDATE reactors set name=\"" + r.Name + "\", building_id=\"" + r.BuildingId + "\", temp=\"" + r.Temp + "\", volume=\"" + r.Volume + "\" where id=" + r.Id + ";";
                         SQLiteCommand cmd = new SQLiteCommand(stm, conn);
-                        int rows = cmd.ExecuteNonQuery();
+                        cmd.ExecuteNonQuery();
+                        refresh = true;
                     }
                 }
             }
@@ -241,7 +242,8 @@ namespace CRUD
                     {
                         string stm = "DELETE FROM reactors WHERE id=\"" + win.txtID.Text + "\";";
                         SQLiteCommand cmd = new SQLiteCommand(stm, conn);
-                        int rows = cmd.ExecuteNonQuery();
+                        cmd.ExecuteNonQuery();
+                        refresh = true;
                     }
                 }
             }
@@ -279,8 +281,8 @@ namespace CRUD
 
                 string stm = "INSERT INTO processes ( id, desc, temp, volume) VALUES (\"" + iID + "\", \"" + r.Name + "\", \"" + r.Temp + "\", \"" + r.Volume + "\");";
                 cmd = new SQLiteCommand(stm, conn);
-                int rows = cmd.ExecuteNonQuery();
-
+                cmd.ExecuteNonQuery();
+                refresh = true;
             }
             Show_Data();
 
@@ -316,7 +318,8 @@ namespace CRUD
 
                         string stm = "UPDATE processes set desc=\"" + r.Desc + "\", temp=\"" + r.Temp + "\", volume=\"" + r.Volume + "\" where id=" + r.Id + ";";
                         SQLiteCommand cmd = new SQLiteCommand(stm, conn);
-                        int rows = cmd.ExecuteNonQuery();
+                        cmd.ExecuteNonQuery();
+                        refresh = true;
                     }
                 }
             }
@@ -345,7 +348,8 @@ namespace CRUD
                     {
                         string stm = "DELETE FROM processes WHERE id=\"" + win.txtID.Text + "\";";
                         SQLiteCommand cmd = new SQLiteCommand(stm, conn);
-                        int rows = cmd.ExecuteNonQuery();
+                        cmd.ExecuteNonQuery();
+                        refresh = true;
                     }
                 }
             }
@@ -411,6 +415,7 @@ namespace CRUD
         private void Delete_Tables(object sender, RoutedEventArgs e)
         {
             Delete_SQL(conn);
+            buildingRefresh = true;
             refresh = true;
             Show_Data();
         }
@@ -443,7 +448,7 @@ namespace CRUD
 
                 string stm = "INSERT INTO buildings ( id, name, address, city, state, zip, phone) VALUES (\"" + iID + "\", \"" + b.Name + "\", \"" + b.Address + "\", \"" + b.City + "\", \"" + b.State + "\", \"" + b.Zip + "\", \"" + b.Phone + "\");";
                 cmd = new SQLiteCommand(stm, conn);
-                int rows = cmd.ExecuteNonQuery();
+                cmd.ExecuteNonQuery();
                 refresh = true;
                 buildingRefresh = true;
             }
