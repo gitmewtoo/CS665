@@ -113,7 +113,7 @@ namespace CRUD
             }
             catch
             {
-                MessageBox.Show("Create database first!", "NO DATABASE");
+                MessageBox.Show("Create database first!", "NO DATABASE", MessageBoxButton.OK, MessageBoxImage.Exclamation);
             }
         }
 
@@ -133,12 +133,14 @@ namespace CRUD
         /// <param name="e">Unused.</param>
         private void Create_Tables(object sender, RoutedEventArgs e)
         {
+            Cursor = Cursors.Wait;
             Create_SQL(conn);
             Create_Triggers(conn);
             Insert_SQL(conn);
             refresh = true;
             buildingRefresh = true;
             Show_Data();
+            Cursor = Cursors.Arrow;
         }
 
         /// <summary>
@@ -389,35 +391,37 @@ namespace CRUD
                         if (p.Temp <= r.Temp)
                         {
                             
-                            MessageBox.Show("Batch of " + p.Desc + " being made in " + r.Name + ".", "COOKING");
+                            MessageBox.Show("Batch of " + p.Desc + " being made in " + r.Name + ".", "COOKING", MessageBoxButton.OK, MessageBoxImage.Information);
                         }
                         else
                         {
-                            MessageBox.Show("Selected reactor cannot reach required temp!", "REACTOR UNSUITABLE");
+                            MessageBox.Show("Selected reactor cannot reach required temp!", "REACTOR UNSUITABLE", MessageBoxButton.OK, MessageBoxImage.Information);
                         }
                     }
                     else
                     {
-                        MessageBox.Show("Select a larger reactor!", "REACTOR TOO SMALL");
+                        MessageBox.Show("Select a larger reactor!", "REACTOR TOO SMALL", MessageBoxButton.OK, MessageBoxImage.Information);
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Select a process first!", "NO PROCESS SELECTED");
+                    MessageBox.Show("Select a process first!", "NO PROCESS SELECTED", MessageBoxButton.OK, MessageBoxImage.Information);
                 }
             }
             else
             {
-                MessageBox.Show("Select a reactor first!", "NO REACTOR SELECTED");
+                MessageBox.Show("Select a reactor first!", "NO REACTOR SELECTED", MessageBoxButton.OK, MessageBoxImage.Information);
             }
         }
 
         private void Delete_Tables(object sender, RoutedEventArgs e)
         {
+            Cursor = Cursors.Wait;
             Delete_SQL(conn);
             buildingRefresh = true;
             refresh = true;
             Show_Data();
+            Cursor = Cursors.Arrow;
         }
 
         private void btnCreateBuilding_Click(object sender, RoutedEventArgs e)

@@ -5,22 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CRUD"
         mc:Ignorable="d"
-        Title="FacilityWindow" Height="200" Width="350">
+        Title="FacilityWindow" Height="200" Width="370">
     <Grid>
-        <Button x:Name="btnOK" Content="OK" HorizontalAlignment="Left" Margin="231,133,0,0" VerticalAlignment="Top" Click="btnOK_Click" Width="48"/>
-        <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="284,133,0,0" VerticalAlignment="Top" Click="btnCancel_Click" Width="48"/>
+        <Button x:Name="btnOK" Content="OK" HorizontalAlignment="Left" Margin="244,132,0,0" VerticalAlignment="Top" Click="btnOK_Click" Width="48"/>
+        <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="297,132,0,0" VerticalAlignment="Top" Click="btnCancel_Click" Width="48"/>
         <Label Content="ID:" HorizontalAlignment="Left" Margin="10,8,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtID" HorizontalAlignment="Left" Margin="71,12,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="51"/>
+        <TextBox x:Name="txtID" HorizontalAlignment="Left" Margin="71,12,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="51" IsEnabled="False"/>
         <Label Content="Name:" HorizontalAlignment="Left" Margin="10,30,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtName" HorizontalAlignment="Left" Margin="71,34,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="261"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Margin="71,34,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="274"/>
         <Label Content="Address:" HorizontalAlignment="Left" Margin="10,52,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtAddress" HorizontalAlignment="Left" Margin="71,56,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="261"/>
+        <TextBox x:Name="txtAddress" HorizontalAlignment="Left" Margin="71,56,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="274"/>
         <Label Content="City:" HorizontalAlignment="Left" Margin="10,74,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtCity" HorizontalAlignment="Left" Margin="71,77,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="116"/>
         <Label Content="State:" HorizontalAlignment="Left" Margin="187,71,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtState" HorizontalAlignment="Left" Margin="224,76,0,0" TextWrapping="Wrap" Text="  " VerticalAlignment="Top" Width="25"/>
-        <Label Content="Zip:" HorizontalAlignment="Left" Margin="250,71,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtZip" HorizontalAlignment="Left" Margin="281,76,0,0" TextWrapping="Wrap" Text="     " VerticalAlignment="Top" Width="51"/>
+        <TextBox x:Name="txtState" HorizontalAlignment="Left" Margin="226,77,0,0" TextWrapping="Wrap" Text="  " VerticalAlignment="Top" Width="32"/>
+        <Label Content="Zip:" HorizontalAlignment="Left" Margin="263,71,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtZip" HorizontalAlignment="Left" Margin="294,76,0,0" TextWrapping="Wrap" Text="     " VerticalAlignment="Top" Width="51"/>
         <Label Content="Phone:" HorizontalAlignment="Left" Margin="10,94,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtPhone" HorizontalAlignment="Left" Margin="71,99,0,0" TextWrapping="Wrap" Text="     " VerticalAlignment="Top" Width="116"/>
 

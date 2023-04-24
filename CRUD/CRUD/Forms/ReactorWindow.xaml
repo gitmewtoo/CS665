@@ -11,7 +11,7 @@
         <Button x:Name="btnOK" Content="OK" HorizontalAlignment="Left" Margin="249,151,0,0" VerticalAlignment="Top" Click="btnOK_Click" Width="51"/>
         <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="305,151,0,0" VerticalAlignment="Top" Click="btnCancel_Click" Width="50"/>
         <Label Content="ID:" HorizontalAlignment="Left" Margin="10,7,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtID" HorizontalAlignment="Left" Margin="94,8,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="51"/>
+        <TextBox x:Name="txtID" HorizontalAlignment="Left" Margin="94,8,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="51" IsEnabled="False"/>
         <Label Content="Name:" HorizontalAlignment="Left" Margin="10,29,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtName" HorizontalAlignment="Left" Margin="94,30,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="261"/>
         <Label Content="Building ID:" HorizontalAlignment="Left" Margin="10,52,0,0" VerticalAlignment="Top"/>
