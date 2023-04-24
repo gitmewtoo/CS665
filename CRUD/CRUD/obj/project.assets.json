@@ -185,24 +185,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\miste\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\thu83\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\miste\\OneDrive\\Documents\\WPF Projects\\CRUD\\CRUD\\CRUD.csproj",
+      "projectUniqueName": "C:\\Users\\thu83\\Documents\\GitHub\\CS665\\CRUD\\CRUD\\CRUD.csproj",
       "projectName": "CRUD",
-      "projectPath": "C:\\Users\\miste\\OneDrive\\Documents\\WPF Projects\\CRUD\\CRUD\\CRUD.csproj",
-      "packagesPath": "C:\\Users\\miste\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\miste\\OneDrive\\Documents\\WPF Projects\\CRUD\\CRUD\\obj\\",
+      "projectPath": "C:\\Users\\thu83\\Documents\\GitHub\\CS665\\CRUD\\CRUD\\CRUD.csproj",
+      "packagesPath": "C:\\Users\\thu83\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\thu83\\Documents\\GitHub\\CS665\\CRUD\\CRUD\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\miste\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\thu83\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -210,7 +205,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -261,7 +255,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

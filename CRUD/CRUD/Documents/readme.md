@@ -1,8 +1,12 @@
 ﻿CRUD
 
 Team Members:
-	Thu Mains: 
-	
+	Thu Mains @github username: gitmewtoo
+	Brandon Castile @github username: SavantEclipse
+
+Contributions
+	Thu Mains: UI design, UI implementation, SQL design, SQL code behind
+
 Project video:
 
 
@@ -14,4 +18,4 @@ Database Description:
 	SQLite was selected because it is a fairly common standard with good support. It integrates well with C#/VS2022.
 
 Guthub Commits
-
+	https://github.com/gitmewtoo/CS665/commits/main
