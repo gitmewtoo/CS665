@@ -8,7 +8,7 @@ Contributions
 	Thu Mains: UI design, UI implementation, SQL design, SQL code behind
 
 Project video:
-
+	https://youtu.be/kyQFU0RCJxA
 
 Database Description:
 	The database is a representation of a company that produces kool aid. It has multiple buildings, within each are
@@ -19,3 +19,5 @@ Database Description:
 
 Guthub Commits
 	https://github.com/gitmewtoo/CS665/commits/main
+
+	
