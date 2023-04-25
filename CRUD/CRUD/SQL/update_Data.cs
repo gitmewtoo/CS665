@@ -10,9 +10,13 @@ namespace CRUD
 {
     public partial class MainWindow
     {
+        //This command allows a table to be cleared then filled with new information within one execution.
+        //This is mainly to reset the table and to add further functionality.
+        //DELETE has no WHERE function so the entire table will be cleared.
+        //This is then followed by code similar to the insert function.
         private void update_SQL(SQLiteConnection conn)
         {
-            string stm = "DROP TABLE reactors;";
+            string stm = "DELETE from reactors;";
             SQLiteCommand cmd = new SQLiteCommand(stm, conn);
             int rows = cmd.ExecuteNonQuery();
             string stm = "INSERT INTO reactors ( id, name, building_id, temp, volume) VALUES (\"1\", \"Reactor I\", \"1\", \"400\", \"9000\");";
@@ -32,7 +36,7 @@ namespace CRUD
             rows = cmd.ExecuteNonQuery();
 
 
-            stm = "DROP TABLE buildings;";
+            stm = "DELETE from buildings;";
             cmd = new SQLiteCommand(stm, conn);
             rows = cmd.ExecuteNonQuery();
             stm = "INSERT INTO buildings ( id, name, address, city, state, zip, phone) VALUES (\"1\", \"River Facility\", \"123 S Fourth, East Range\", \"Wichita\", \"KS\", \"67212\", \"3169994444\");";
@@ -52,7 +56,7 @@ namespace CRUD
             rows = cmd.ExecuteNonQuery();
 
 
-            stm = "DROP TABLE processes;";
+            stm = "DELETE from processes;";
             cmd = new SQLiteCommand(stm, conn);
             rows = cmd.ExecuteNonQuery();
             stm = "INSERT INTO processes ( id, desc, temp, volume) VALUES (\"1\", \"Red Kool Aid\", \"75\", \"5000\");";
@@ -72,7 +76,7 @@ namespace CRUD
             rows = cmd.ExecuteNonQuery();
 
 
-            stm = "DROP TABLE process_reactants;";
+            stm = "DELETE from process_reactants;";
             cmd = new SQLiteCommand(stm, conn);
             rows = cmd.ExecuteNonQuery();
             stm = "INSERT INTO reactants ( id, name, onhand, orderpoint) VALUES (\"1\", \"Red Dye\", \"2000\", \"500\");";
@@ -98,7 +102,7 @@ namespace CRUD
             rows = cmd.ExecuteNonQuery();
 
 
-            stm = "DROP TABLE reactants;";
+            stm = "DELETE from reactants;";
             cmd = new SQLiteCommand(stm, conn);
             rows = cmd.ExecuteNonQuery();
             stm = "INSERT INTO process_reactants ( id, process_id, reactant_id, temp, volume) VALUES (\"1\", \"1\", \"1\", \"50\", \"1\");";

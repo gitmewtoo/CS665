@@ -10,6 +10,8 @@ namespace CRUD
 {
     public partial class MainWindow
     {
+        //Simple delete process without a WHERE to target specific parameters.
+        //It will clear the entire tables contents, but not the table itself
         private void Clear_SQL(SQLiteConnection conn)
         {
             string stm = "DELETE from reactors;";

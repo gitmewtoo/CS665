@@ -8,6 +8,9 @@ using System.Windows;
 
 namespace CRUD
 {
+
+    //This function will completely remove the entire table and all of its contents
+    //Should ask if we're sure before executing.
     public partial class MainWindow
     {
         private void Delete_SQL(SQLiteConnection conn)

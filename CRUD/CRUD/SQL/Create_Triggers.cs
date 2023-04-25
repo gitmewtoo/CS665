@@ -10,6 +10,11 @@ namespace CRUD
 {
     public partial class MainWindow
     {
+        //This function will trigger an event after one of the dependent tables is deleted, the combined elements
+        //such as process+reactants will be deleted.
+        //One the trigger is called we automatically use the function delete_process_reactants, delete_process_reactants2, or delete_reactors
+        //We trigger an event where the ones that are deleted are the objects with an ID == to the OLD.id
+        //Or the held ID of the combined table.
         private void Create_Triggers(SQLiteConnection conn)
         {
             string stm = "CREATE TRIGGER delete_process_reactants " +

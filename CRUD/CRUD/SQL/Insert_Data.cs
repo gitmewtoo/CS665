@@ -8,6 +8,9 @@ namespace CRUD
 {
     public partial class MainWindow
     {
+
+        //This function and the many iterations shown here are being used to populate the tables used in the presentation.
+        //of course we start off with a large amount of prepopulated fields.
         private void Insert_SQL(SQLiteConnection conn)
         {
             string stm = "INSERT INTO reactors ( id, name, building_id, temp, volume) VALUES (\"1\", \"Reactor I\", \"1\", \"200\", \"5000\");";
