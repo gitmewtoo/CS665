@@ -8,3 +8,6 @@ CREATE TRIGGER delete_process_reactants AFTER DELETE ON reactants FOR EACH ROW B
 CREATE TRIGGER delete_process_reactants_2 AFTER DELETE ON processes FOR EACH ROW BEGIN DELETE FROM process_reactants WHERE process_reactants.process_id = OLD.id; END;
 CREATE TRIGGER delete_reactors AFTER DELETE ON buildings FOR EACH ROW BEGIN ELETE FROM reactors WHERE reactors.building_id = OLD.id; END;
 
+CREATE TRIGGER delete_process_reactants_3 AFTER DELETE ON buildings FOR EACH ROW BEGIN DELETE FROM process_reactants WHERE reactors.building_id = OLD.id; END;
+CREATE TRIGGER delete_process_reactants_4 AFTER DELETE ON reactors FOR EACH ROW BEGIN DELETE FROM process_reactants WHERE reactors.building_id = OLD.id; END;
+
