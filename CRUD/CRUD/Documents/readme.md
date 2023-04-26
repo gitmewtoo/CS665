@@ -6,7 +6,7 @@ Team Members:
 
 Contributions
 	Thu Mains: UI design, UI implementation, SQL design, SQL code behind
-	Brandon Castile Additional functions to SQL code behind, triggers, comments, caution button for the delete operations.
+	Brandon Castile Additional functions to SQL code behind, triggers, comments.
 Project video:
 	https://youtu.be/kyQFU0RCJxA
 
